@@ -4,9 +4,9 @@ use lib 'lib';
 use Redis;
 use Redis::Hash;
 
-my $r = Redis->new(server => '192.168.208.85:6379');
-my $r2 = Redis->new(server => '192.168.208.85:6380');
-my $r3 = Redis->new(server => '192.168.208.85:6381');
+my $r = Redis->new(server => 'localhost:6379');
+my $r2 = Redis->new(server => 'localhost:6380');
+my $r3 = Redis->new(server => 'localhost:6381');
 $r->del("a");
 $r->set("a","aa");
 sub n1 { $r->get(shift)}
