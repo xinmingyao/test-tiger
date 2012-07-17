@@ -1,7 +1,13 @@
 test for tiger use perl
 
-intall tiger
+download tiger
 
-prove
+make && make devrel
+
+download this project on tiger
+
+cd test-tiger
+
+prove t
 
 
